@@ -28,10 +28,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'passenger'
+gem 'nokogiri'
+gem 'activesupport'
 
 group :development, :test do
 	gem 'rspec-rails'
-	gem 'capybara'
 	gem 'shoulda'
 end
 # Use ActiveModel has_secure_passwordd

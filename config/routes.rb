@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  with_options only: :show do |list_only|
+    list_only.resources :metars
+    list_only.resources :tafs
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
